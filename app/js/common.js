@@ -1,5 +1,12 @@
 $(function() {
 
-	// Custom JS
+// slider
+$(document).ready(function(){
+    $('.slider').bxSlider({
+		controls: false,
+		speed: 600
+	  });
+  });
+// slider-end
 
 });
