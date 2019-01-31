@@ -53,19 +53,56 @@ body
 .text-center
 	text-align: center
 
+// header
+.header
+	height: 103px
 .logo
 	display: block
 	float: left
+	margin-top: 25px
 .telblock
 	display: block
 	float: right
 	color: #eb4b19
 	font-size: 40px
 	font-weight: bold
+	background: img 
+	&::before
+		content: ' '
+		position: absolute
+		background: url("../img/phone.png") 0 0 no-repeat
+		-webkit-background-size: contain
+		background-size: contain
+		width: 33px
+		height: 46px
+		margin-left: -39px
+		margin-top: 18px
 	a
 		font-size: 18px	
 		font-weight: normal
+		display: block
+		text-align: center
+		padding: 0
+		margin: -12px
+		text-decoration: underline
+// header-end
 
+// main-menu
+.main-menu	
+	background-color: #ff602a
+	ul
+		float: right
+		margin: 7px 0
+		li 
+			display: inline-block
+			text-anchor: none
+			a 
+				font-size: 20px
+				color: #093426
+				&:hover
+					color: #fff
+					transition: 1s cubic-bezier(.5, .5, .1, 1)
+// main-menu-end
 ::selection
 	background-color: $accent
 	color: #fff
