@@ -9,4 +9,14 @@ $(document).ready(function(){
   });
 // slider-end
 
+// carousel-main
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+		items: 4,
+		loop: true,
+		dots: false,
+		autoplay: true
+	});
+});
+// carousel-main-end
 });

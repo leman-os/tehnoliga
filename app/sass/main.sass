@@ -53,6 +53,12 @@ body
 .text-center
 	text-align: center
 
+h1 
+		font-size: 30px
+		color: #000
+		text-align: center
+		font-weight: 300
+
 // header
 .header
 	height: 103px
@@ -101,7 +107,7 @@ body
 				color: #093426
 				&:hover
 					color: #fff
-					transition: 1s cubic-bezier(.5, .5, .1, 1)
+					// transition: 1s cubic-bezier(.5, .5, .1, 1)
 // main-menu-end
 
 // slider
@@ -130,11 +136,6 @@ body
 //about
 .about
 	background-color: #ffedd4
-	h1 
-		font-size: 30px
-		color: #000
-		text-align: center
-		font-weight: 300
 	.it
 		height: 220px
 		font-size: 16px
@@ -159,7 +160,197 @@ body
 		background: url("../img/about/5.jpg") 0 0 no-repeat
 	.item6
 		background: url("../img/about/6.jpg") 0 0 no-repeat
-//about-end	
+//about-end
+
+//form-one
+.form1
+	margin-top: 56px
+	padding: 15px
+	background-color: #f7edd4
+	input, select, textarea 
+		width: 431px
+		height: 43px
+		font-size: 25px
+		font-weight: 400
+		display: block
+		margin: 0 auto
+		margin-bottom: 15px
+	option
+		color: #008040
+	textarea
+		height: auto
+		height: 100px
+	h2 
+		text-align: center
+		font-family: $default-font
+		font-size: 30px
+		font-weight: 400
+.but1
+	width: 124px !important
+	height: 39px !important
+	background-color: #fba828
+	border: none
+	margin: 0 auto
+	display: block
+	&:hover
+		background-color: #fa7c29
+		transition: 0.5s ease
+		// box-shadow: 2px 1px 4px 1px #000000
+.form-img
+	background: url("../img/form-img.jpg") 0 0 no-repeat
+	background-size: cover
+	height: 459px
+//form-one-end
+
+//carousel-main
+.carousel-main
+	margin-top: 56px
+	height: auto
+	background-color: #f7ede4
+	.item
+		margin-top: 51px
+		margin-bottom: 15px
+		margin-left: 10px
+		width: 255px
+		height: 532px
+		// border: 1px solid #448d76
+		background-color: #ffffff
+		h3 
+			font-size: 20px
+			font-family: $default-font
+			color: #093426
+			font-weight: 40
+			text-align: center
+
+		p 
+			font-size: 14px
+			font-weight: 400
+			padding-left: 25px
+			line-height: 1.5
+		&:hover
+			box-shadow: 3px 1px 16px 6px rgba(0, 0, 0, 0.53)
+		a 
+			@extend .but1
+			font-size: 25px
+			font-weight: 400
+			text-align: center
+			color: #093426
+			text-decoration: none
+			padding-bottom: 25px
+.link-main
+	color: #ae0d7a
+	font-size: 18px
+	font-weight: 400
+	text-decoration: underline
+	text-align: center
+	display: block
+	margin-top: 15px
+	margin-bottom: 25px
+//carousel-main-end
+
+// news-on-main
+.newsblock
+	padding-top: 59px
+	display: table
+.imgnews
+	display: inline
+	float: left
+	margin-right: 15px
+	// width: 160px
+	// height: 146px
+.ntxt
+	display: inline
+	a 
+		color: #180443
+		font-size: 20px
+		font-weight: 400
+		text-decoration: underline
+		text-align: center
+		display: block
+		margin: 0
+	p 
+		font-size: 16px
+		color: #093426
+		display: block
+		margin-top: 0
+		margin-left: 15px
+	.news-date
+		font-size: 16px
+		font-weight: bold
+		color: #093426	
+		float: right
+.news-on-main
+	.link-main
+		margin-top: 43px	
+// news-on-main-end
+
+// use
+.use
+	h2 
+		@extend h1 
+		font-size: 25px
+	img
+		width: 220px
+		display: block
+		margin: 0 auto
+		margin-top: 25px
+	p 
+		text-align: center
+		line-height: 1.2
+// use-end
+	
+// info-on-main
+.info
+	margin-top: 25px
+	.item
+		margin-top: 39px
+		margin-bottom: 53px
+		background-color: #f7ede4
+		padding-bottom: 15px
+		h2 
+			display: block
+			color: #000
+			text-align: center
+			text-decoration: underline
+		p 
+			display: block
+			text-decoration: none
+			color: #000
+			text-align: justify
+			margin: 15px 15px
+		&:hover
+			box-shadow: 0 0 31px 7px rgba(0, 0, 0, 0.44)
+	a 
+		&:hover
+			text-decoration: none
+	.link-main
+		&:hover
+			text-decoration: underline
+.infoimg
+	img
+		display: block
+		width: 100%
+// info-on-main-end
+
+// map-on-main
+
+// map-on-main-end
+
+// footer
+.footer
+	background-color: #ff602a
+	padding-top: 25px
+	a 
+		color: #ffffff
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	li 
+		list-style-type: none
+	p 
+		color: #ffffff
+		text-align: center
+// footer-end
 ::selection
 	background-color: $accent
 	color: #fff
