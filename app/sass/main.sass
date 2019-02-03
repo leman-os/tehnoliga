@@ -95,7 +95,7 @@ h1
 
 // main-menu
 .main-menu	
-	background-color: #ff602a
+	background-color: #ff602a 
 	ul
 		float: right
 		margin: 7px 0
@@ -333,11 +333,14 @@ h1
 // info-on-main-end
 
 // map-on-main
-
+.map
+	margin-bottom: -30px
+	margin-top: 30px
 // map-on-main-end
 
 // footer
 .footer
+	margin-top: 30px
 	background-color: #ff602a
 	padding-top: 25px
 	a 
@@ -351,6 +354,97 @@ h1
 		color: #ffffff
 		text-align: center
 // footer-end
+
+//popup-main-callback
+.popup-main
+	@extend .form1
+	margin-top: 0
+// popup-main-callback-end
+
+//top
+.top
+	height: 90px
+	background: url("../img/header-bg.jpg") 0 0 no-repeat
+	background-size: cover
+	h1	
+		color: #ffffff
+		text-align: left
+//top-end
+
+// catalog
+.catalog
+	a 
+		font-size: 18px
+		display: block
+	img 
+		margin-top: 30px
+		width: 200px
+		display: block
+// catalog-end
+
+// contact
+.contact
+	margin-top: 40px
+	p, li
+		font-size: 20px
+		font-weight: 100
+.form2
+	@extend .form1
+	background-color: #fff !important
+.but2
+	@extend .but1
+	background-color: #fba828
+//contact-end
+
+// cart-product
+.cart-product
+	margin-top: 56px
+	h2 
+		margin-top: 0
+	p
+		margin: 0
+		font-size: 16px
+		line-height: 1.5
+.but3
+	@extend .but2 
+	width: 160px !important
+	background-color: #dc3d22
+	text-align: center
+	color: #ffffff
+	font-size: 25px
+	&:hover
+		text-decoration: none
+		color: #ffffff
+.but4
+	margin-top: 13px
+	@extend .but3
+	background-color: #eb4b19
+	text-align: center
+	color: #ffffff
+	font-size: 25px
+	text-decoration: none
+.but5
+	@extend .but4
+	background-color: #e0e0e0
+	color: #000000
+// cart-product-end
+
+// catalog-cart
+.catalog-cart
+	@extend .catalog
+	a 
+		display: inline
+.but6
+	@extend .but3
+	width: auto !important
+	height: auto !important
+	float: right
+	padding: 0 5px
+.popup-main-info
+	@extend .popup-main
+	width: 70%
+// catalog-cart-end
+
 ::selection
 	background-color: $accent
 	color: #fff
