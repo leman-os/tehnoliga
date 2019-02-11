@@ -104,10 +104,17 @@ h1
 			text-anchor: none
 			a 
 				font-size: 20px
-				color: #093426
-				&:hover
-					color: #fff
-					// transition: 1s cubic-bezier(.5, .5, .1, 1)
+				color: #fff
+			&:hover
+				color: #e4eef1
+				// transition: 1s cubic-bezier(.5, .5, .1, 1)
+			&:after
+				content: "|"
+				margin: 0 5px
+				color: #fff
+			&:last-child
+				&:after
+					content: ""
 // main-menu-end
 
 // slider
