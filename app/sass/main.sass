@@ -61,7 +61,7 @@ h1
 
 // header
 .header
-	height: 103px
+	height: auto
 .logo
 	display: block
 	float: left
@@ -95,6 +95,7 @@ h1
 
 // main-menu
 .main-menu	
+	margin-top: 10px
 	background-color: #ff602a 
 	ul
 		float: right
@@ -151,29 +152,39 @@ h1
 		margin-top: 20px
 		margin-bottom: 20px
 		
+		
 		p 
 			width: 299px
-			margin-left: 210px
+			//margin-left: 210px
 			text-align: center
+			font-size: 1em
+			float: right
+			display: inline-block
 	.item1
 		background: url("../img/about/1.jpg") 0 0 no-repeat
+		background-size: cover
 	.item2
 		background: url("../img/about/2.jpg") 0 0 no-repeat
+		background-size: cover
 	.item3
 		background: url("../img/about/3.jpg") 0 0 no-repeat
+		background-size: cover
 	.item4
 		background: url("../img/about/4.jpg") 0 0 no-repeat
+		background-size: cover
 	.item5
 		background: url("../img/about/5.jpg") 0 0 no-repeat
+		background-size: cover
 	.item6
 		background: url("../img/about/6.jpg") 0 0 no-repeat
+		background-size: cover
 //about-end
 
 //form-one
 .form1
 	margin-top: 56px
 	padding: 15px
-	background-color: #f7edd4
+	background-color: #e8e8e8
 	input, select, textarea 
 		width: 431px
 		height: 43px
@@ -218,8 +229,8 @@ h1
 		margin-top: 51px
 		margin-bottom: 15px
 		margin-left: 10px
-		width: 255px
-		height: 532px
+		width: 85%
+		height: 572px
 		// border: 1px solid #448d76
 		background-color: #ffffff
 		h3 
@@ -244,6 +255,9 @@ h1
 			color: #093426
 			text-decoration: none
 			padding-bottom: 25px
+			position: absolute
+			bottom: 32px
+			left: 28%
 .link-main
 	color: #ae0d7a
 	font-size: 18px
@@ -285,7 +299,9 @@ h1
 	font-size: 16px
 	font-weight: bold
 	color: #093426	
-	float: right
+	position: absolute
+	bottom: 13px
+	background-color: #fff
 .news-on-main
 	.link-main
 		margin-top: 43px	
@@ -314,16 +330,18 @@ h1
 		margin-bottom: 53px
 		background-color: #f7ede4
 		padding-bottom: 15px
+		height: 520px
 		h2 
 			display: block
 			color: #000
 			text-align: center
 			text-decoration: underline
+			font-weight: 100
 		p 
 			display: block
 			text-decoration: none
 			color: #000
-			text-align: justify
+			text-align: center
 			margin: 15px 15px
 		&:hover
 			box-shadow: 0 0 31px 7px rgba(0, 0, 0, 0.44)
@@ -459,6 +477,8 @@ h1
 	margin-top: 50px
 	img
 		width: 100%
+	p 
+		margin: 10px 20px
 //article-end
 
 // post
@@ -485,7 +505,20 @@ h1
 		text-decoration: underline
 		font-weight: 700
 		color: #000000
+	.item
+		height: 380px
 // news-end
+
+.formstyle
+	display: inline-block
+	border: 12px #fff solid
+	border-radius: 40px
+	background-color: #e8e8e8
+
+.textblock
+	margin: 10px
+	img
+		margin: 15px
 
 // gallery
 .gallery
